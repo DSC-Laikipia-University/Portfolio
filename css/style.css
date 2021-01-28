@@ -1,0 +1,144 @@
+/*
+
+PROJECT  : PORTFOLIO,
+DEVELOPER: AIM MIKEL,
+CREATED  : 28/01/2021,
+LICENSE  : MIT,
+COPYRIGHT: 2021 AIM MIKEL
+
+_____________________ OFFICIAL LOGO ____________________
+___________________________/\___________________________
+__________________________/00\__________________________
+_________________________/0000\_________________________
+__________________/\____/000000\____/\__________________
+_________________/00\__/00000000\__/00\_________________
+________________/0000\/0000000000\/0000\________________
+_______________/00000/00000/\00000\00000\_______________
+______________/00000/00000/__\00000\00000\______________
+_____________/00000/00000/____\00000\00000\_____________
+____________/00000/00000/\____/\00000\00000\____________
+___________/00000/00000/00\__/00\00000\00000\___________
+__________/00000/00000/0000\/0000\00000\00000\__________
+_________/00000/00000/\0000000000/\00000\00000\_________
+_________\0000/00000/__\00000000/__\00000\0000/_________
+__________\00/00000/____\000000/____\00000\00/__________
+___________\/00000/______\0000/______\00000\/___________
+___________/00000/________\00/________\00000\___________
+__________/00000/__________\/__________\00000\__________
+__________\0000/________________________\0000/__________
+___________\00/__________________________\00/___________
+____________\/____________________________\/____________
+________________________________________________________
+*/
+
+:root {
+	--bg-default: #263238;
+	--bg-primary: #37474f;
+	--txt-default: #eceff1;
+	--txt-primary: #2196f3;
+}
+
+@font-face {
+	font-family: sadtember;
+	src: url(fonts/Sadtember.ttf) format("truetype");
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	background: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	color: inherit;
+}
+
+body {
+	background: var(--bg-default);
+	font-size: 19px;
+	letter-spacing: 1px;
+	cursor: default;
+	color: var(--txt-default);
+	fill: var(--txt-default);
+	font-family: sadtember;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+}
+
+.content {
+	background: var(--bg-primary);
+	margin: 20px auto;
+	box-shadow: #000000 0 0 5px;
+	display: flex;
+	display: -webkit-flex;
+	width: 95%;
+	max-width: 800px;
+	min-height: 300px;
+	border-radius: 3px;
+	padding: 20px 0;
+}
+
+.left-content,
+.right-content {
+	width: 50%;
+	padding: 20px;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	-webkit-flex-direction: column;
+	align-items: center;
+	-webkit-align-items: center;
+}
+
+.left-content {
+	border-right: 1px solid var(--bg-default);
+}
+
+.avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 100%;
+	box-shadow: #000000 0 0 5px;
+	border-radius: 100%;
+	border: 3px solid var(--txt-default);
+	padding: 3px;
+}
+.left-content .infos {
+	padding: 20px 30px;
+	align-items: flex-start;
+}
+
+.left-content .infos h1 {
+	font-size: 300%;
+	margin-top: 10px;
+}
+
+.right-content h3 {
+	padding-bottom: 5px;
+	width: 100%;
+	border-bottom: 1px solid var(--txt-default);
+	margin-bottom: 10px;
+	color: var(--txt-primary);
+	font-size: 150%;
+}
+.right-content p {
+	font-size: 120%;
+}
+
+.right-content .social {
+	display: flex;
+	display: -webkit-flex;
+	align-items: center;
+	-webkit-align-items: center;
+	margin-top: 20px;
+}
+
+.right-content .social img {
+	width: 30px;
+	height: 30px;
+	margin: 0 5px;
+}
